@@ -1,3 +1,20 @@
+
+# quickstart with docker
+```
+$ git clone https://github.com/c4pt000/gekko
+$ cd gekko
+$ docker-compose build
+$ docker-compose up -d
+```
+localhost:3000
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
 # Gekko [![npm](https://img.shields.io/npm/dm/gekko.svg)]() [![Build Status](https://travis-ci.org/askmike/gekko.png)](https://travis-ci.org/askmike/gekko) [![Build status](https://ci.appveyor.com/api/projects/status/github/askmike/gekko?branch=stable&svg=true)](https://ci.appveyor.com/project/askmike/gekko)
 
 
