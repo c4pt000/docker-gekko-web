@@ -3,8 +3,8 @@
 ```
  git clone https://github.com/c4pt000/gekko
  cd gekko
- docker build .
- docker up -d .
+ docker-compose build 
+ docker-compose up -d 
 ```
 localhost:3000
 <br>
