@@ -4,13 +4,12 @@
  docker run -it -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -p 3000:3000 c4pt/gekko-bot node gekko --config sample-config.js --ui 
 ```
 
-<br>
-<br>
+
 # DOES NOT SUPPORT LIVE TRADING ONLY FOR SIMULATED TRADEING STRATEGY
 <br>
 <br>
 <br>
-
+* based off of docker pull barnumd/gekko
 
 
 # Gekko [![npm](https://img.shields.io/npm/dm/gekko.svg)]() [![Build Status](https://travis-ci.org/askmike/gekko.png)](https://travis-ci.org/askmike/gekko) [![Build status](https://ci.appveyor.com/api/projects/status/github/askmike/gekko?branch=stable&svg=true)](https://ci.appveyor.com/project/askmike/gekko)
