@@ -1,4 +1,4 @@
-* pre-existing bugs cex.io not fully functional, poloniex tested semi working other bugs with sub processes dying this code is only for legacy purposes the original author no longer maintains this code
+# * pre-existing bugs cex.io not fully functional, poloniex tested semi working other bugs with sub processes dying this code is only for legacy purposes the original author no longer maintains this code
 
 # quickstart with docker
 ```
