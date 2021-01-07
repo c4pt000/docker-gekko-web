@@ -1,12 +1,7 @@
 
 # quickstart with docker
 ```
- git clone https://github.com/c4pt000/gekko
- cd gekko
- git checkout develop 
- git pull
- docker-compose build 
- docker-compose up -d 
+ docker run -it -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -p 3000:3000 c4pt/gekko-bot node gekko --config sample-config.js --ui 
 ```
 localhost:3000
 <br>
