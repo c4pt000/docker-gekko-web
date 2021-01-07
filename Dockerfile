@@ -19,13 +19,14 @@ RUN npm install --only=production && \
     npm cache clean --force
 
 # Install Gekko Broker dependencies
+COPY exchange .
 WORKDIR exchange
-COPY exchange/package.json .
 RUN npm install --only=production && \
     npm cache clean --force
-RUN mv web/vue/UIconfig.js mv web/vue/public/UIconfig.js
 
 WORKDIR ../
+
+#RUN mv web/vue/UIconfig.js mv web/vue/public/UIconfig.js
 
 # Bundle app source
 COPY . /usr/src/app
