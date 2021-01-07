@@ -8,20 +8,23 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install GYP dependencies globally, will be used to code build other dependencies
-RUN npm install -g --production node-gyp && \
+RUN npm install -g --only=production node-gyp && \
     npm cache clean --force
 
 # Install Gekko dependencies
 COPY package.json .
-RUN npm install --production && \
-    npm install --production redis@0.10.0 talib@1.0.2 tulind@0.8.7 pg && \
+
+RUN npm install --only=production && \
+    npm install --only=production redis@0.10.0 talib@1.0.2 tulind@0.8.7 pg && \
     npm cache clean --force
 
 # Install Gekko Broker dependencies
 WORKDIR exchange
 COPY exchange/package.json .
-RUN npm install --production && \
+RUN npm install --only=production && \
     npm cache clean --force
+RUN mv web/vue/UIconfig.js mv web/vue/public/UIconfig.js
+
 WORKDIR ../
 
 # Bundle app source
