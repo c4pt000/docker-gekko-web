@@ -3,9 +3,10 @@
 ```
  docker run -it -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -p 3000:3000 c4pt/gekko-bot node gekko --config sample-config.js --ui 
 ```
-localhost:3000
+
 <br>
 <br>
+# DOES NOT SUPPORT LIVE TRADING ONLY FOR SIMULATED TRADEING STRATEGY
 <br>
 <br>
 <br>
